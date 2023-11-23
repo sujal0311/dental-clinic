@@ -1,0 +1,117 @@
+@media(max-width:1199.5px){
+    .card{
+        padding: 2.5rem 1.875rem;
+    }
+    .nav-link{
+        font-size: 1rem;
+        margin: 3px;
+    }
+    #login{
+        font-size: 0.7rem;
+        padding: 5px;
+    }
+    #signup{
+        font-size: 0.7rem;
+        padding: 5px;
+    }
+    .banner-wrapper .animate-img .aimg1{
+        margin-left: 3.5rem;
+    }
+    .container{
+        margin-left: 3%;
+    }
+}
+@media(max-width:991px){
+    .wrapper{
+        padding: 3.125rem;
+    }
+    .main-btn{
+        font-size: .875rem;
+    }
+    h1{
+        font-size: 2.8rem;
+        margin-bottom: .625rem;
+    }
+    h2{
+        font-size: 1.875rem;
+    }
+    h3{
+        font-size: 1.56rem;
+    }
+    h4{
+        font-size: 1.25rem;
+    }
+    h5{
+        font-size:1.125rem;
+    }
+    p{
+        font-size: .875rem;
+        line-height: 1.35rem;
+    }
+    .card{
+        padding: 1.875rem 1rem;
+    }
+    .header-wrapper .menu-navbar{
+        text-align: center;
+    }
+}
+@media(max-width:767px){
+    .main-btn{
+        font-size: .875rem;
+    }
+    h1{
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .appointment-wrapper h3{
+        font-size: 1.4rem;
+        width: 40%;
+    }
+    h5{
+        font-size:1.25rem;
+    }
+    #login{
+        font-size: 1rem;
+        padding: 10px;
+    }
+    #signup{
+        font-size: 1rem;
+        padding: 8px;
+    }
+    ::-webkit-scrollbar{
+        width: .175rem;
+    }
+    .container{
+        margin-left: 0%;
+    }
+    .banner-wrapper p{
+        max-width: 100%;
+    }
+    .banner-wrapper .animate-img .aimg1{
+        width:90px;
+        margin-left: 1rem;
+    }
+    .banner-wrapper .animate-img .aimg2{
+        width:90px;
+        margin-left: 8rem;
+    }
+    .wrapper{
+        padding: 1.5rem;
+    }
+    .banner-wrapper{
+        margin-top: 15%;
+    }
+    #img-animate{
+        width: 45%;
+        height: 50%;
+    }
+    .about-wrapper .card{
+        width: 100%;
+    }
+    .login-wrapper h4{
+        font-size: 1.3rem;
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}

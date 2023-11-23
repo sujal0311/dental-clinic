@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&family=Roboto+Slab:wght@200;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;1,500&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Roboto+Slab:wght@200;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    /* font-family: var(--primary-font); */
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+:root{
+    --primary-color:#004caa;
+    --bg-light-blue:#3672bc;
+    --bg-dark:#666;
+    --bg-white:#fff;
+
+    --primary-font:'Roboto Slab',serif;
+    --secondary-font:'Josefin Sans', sans-serif;
+    --primary-text:#004caa;
+    --secondary-text:#fc5185;
+    --text-black:#222;
+    --text-gray:#666;
+    --text-light:#ddd;
+}
+::-webkit-scrollbar{
+    width: .375rem;
+}
+::-webkit-scrollbar-thumb{
+    background: #fc5185;
+}
+::-webkit-scrollbar-track{
+    background: #3672bc;
+}
+a{
+    text-decoration: none;
+}
+.wrapper{
+    padding: 6.25rem 0;
+}
+.nav-link{
+color: #004caa;
+font-size: larger;
+margin:0 0.6rem;
+font-family:'Josefin Sans', sans-serif;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #fc5185;
+}
+.nav-link:hover{
+    color: #fc5185;
+}
+.navbar-toggler,
+.header-wrapper .navbar-toggler:focus{
+    border: 0;
+    box-shadow: none;
+    color: #222;
+    transition: 0.3s ease-in-out;
+}
+.navbar{
+    position: fixed;
+    margin-bottom: 10px;
+    z-index: 999;
+    width: 100%;
+}
+.header-wrapper{
+    background-color: transparent ;
+}
+#login:hover{
+    color: black;
+    background-color: #fff !important
+}
+.main-btn{
+    display: inline-block;
+    border: .0625rem solid #fff;
+    color: #ddd;
+    text-align: center;
+    padding: .75rem 1.375rem;
+    font-size: 1rem;
+    background: transparent;
+    text-transform: capitalize;
+    border-radius: .1875rem;
+    transition: all 0.3s ease-in-out;
+}
+.main-btn:hover{
+    background-color: #ede6e8;
+    border-color: #fc5185;
+    color: #110f0f;
+}
+.fill-btn{
+    background-color: #e56488;
+    border-color: #fc5185;
+    color: #ddd;
+}
+.fill-btn:hover{
+    background-color: #fff;
+    border-color: #fff;
+    color: #222;
+}
+h1{
+    font-size: 3.875rem;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+    color: #ddd;
+    font-family: 'Josefin Sans', sans-serif;
+}
+h2{
+    font-size: 2.875rem;
+    font-weight: 600;
+    color: #222020;
+    font-family: 'Josefin Sans', sans-serif;
+}
+h3{
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2.25rem;
+    color: #222;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 0.5rem;
+}
+h5{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #222;
+    margin-bottom: .9375rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+h6{
+    font-size: .875rem;
+    font-weight: 300;
+   text-transform: uppercase;
+    color: #222;
+    margin-bottom: .9375rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+p{
+    font-size: 1.09rem;
+    line-height: 1.625rem;
+    justify-content: center;
+    padding-left: 0 8px;
+}
+.card{
+border-radius: .625rem;
+background-color: #fff;
+box-shadow: .1084rem .019rem 1rem;
+padding: 3rem 3.125rem 4.6875rem;
+transition: all .4s;
+border: 0;
+}
+@keyframes movebounce{
+0%{
+    transform: translateY(0);
+}
+50%{
+    transform: translateY(1.25rem);
+}
+100%{
+    transform: translateY(0);
+}
+}
+/* banner section */
+.banner-wrapper{
+    background: url('./images/top-banner-img/Top-banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-top: 2%;
+}
+  .banner-wrapper p{
+    max-width: 80%;
+  }
+  .banner-wrapper .top-right-sec{
+    position: relative;
+    background-image: url('./images/top-banner-img/top-right-bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+  }
+  .banner-wrapper .animate-img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform:translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 22;
+  }
+  .banner-wrapper .animate-img .aimg1{
+    margin-left: 5.5rem;
+    position: absolute;
+    animation: movebounce 2s ease-in-out 100ms infinite alternate;
+  }
+  .banner-wrapper .animate-img .aimg2{
+    margin-left: 15.5rem;
+    position: relative;
+    animation: movebounce 2.5s ease-in-out 200ms infinite alternate;
+  }
+  .home .card:hover{
+    transform: translateY(-0.625rem);
+  }
+  .home .icon-box{
+    text-align: center;
+    margin: 0 auto 2.5rem;
+  }
+.about-wrapper .card{
+    width: 80%;
+   flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-wrapper .about-clinic{
+    flex:0 0 auto;
+    width: 50%;
+}
+.about-wrapper .about-clinic:nth-child(1),
+.about-wrapper .about-clinic:nth-child(2){
+    margin-bottom: 3rem;
+}
+.about-wrapper .about-clinic:nth-child(2),
+.about-wrapper .about-clinic:nth-child(4){
+    padding-left: 3.75rem;
+}
+.about-wrapper .line-1,.about-wrapper .line-2{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 0.5%;
+    height: 100%;
+    background-color: #222;
+}
+.about-wrapper .line-2{
+    height: 0.5%;
+    width: 100%;
+
+}
+.service-wrapper{
+    background-color: #004caa;
+}
+.service-wrapper .card:hover{
+    transition: all .3s;
+    background-color: #a3e0ec;
+}
+.team-wrapper .card{
+    padding: 1.25rem;
+}
+.team-wrapper .card:hover{
+    transform: translateY(-0.625rem);
+}
+.team-wrapper .team-img{
+    margin: 0 auto;
+}
+.team-wrapper .team-info .social-network{
+    transition: all 0.3s ease-in-out;
+    padding: 0.625rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.team-wrapper .team-info .social-network li i{
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 1.56rem;
+    margin: 0 0.3rem;
+    font-size: 1.5rem;
+}
+.gallery-wrapper .container{
+    background-image: url('./images/gallery/gallery-background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    padding: 2rem;
+}
+.testimonial-wrapper .customer-template{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial-wrapper .review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.appointment-wrapper{
+    background: url('./images/appointmnet-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.blog-wrapper .blog-content{
+    background-color: #3672bc;
+}
+.footer-wrapper{
+    background-color: #3672bc;
+}
+.social-network{
+    transition: all 0.3s ease-in-out;
+    padding: 0.625rem 0;
+    display: flex;
+}
+ .social-network li i{
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 1.56rem;
+    margin: 0 0.3rem;
+    font-size: 1.5rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 4px;
+}
+.notify-section{
+    display: flex;
+    flex-direction: column;
+}
+.notify-section input{
+    padding: 12px;
+    border: 1px solid white;
+    margin-bottom: 1rem;
+    outline: none;
+    box-shadow: none;
+}
+/* login section */
+#login-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-wrapper input{
+    background-color: #d6d5d5;
+    margin-top: 0.2rem;
+    padding: 0.6rem;
+}
+.login-wrapper .main-btn:hover{
+    border: 2px solid #fc5185 !important
+}
+#main .wrapper{
+    padding: 0.8rem 0;
+}
+.login-wrapper .login-socialmedia{
+    background-color: #eeeded;
+}
+.login-wrapper .login-socialmedia:hover{
+    background-color: #c9c6c6;
+}
